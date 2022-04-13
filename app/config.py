@@ -15,9 +15,9 @@ class Settings(BaseSettings):
 
     class Config:
         #env_file = 'fastapi/app/.env'
-        #env_file = ".env"
+        env_file = ".env"
         #env_file = os.path.expanduser('~/.env')
-        env_file = f"{os.path.dirname(os.path.abspath(__file__))}/./.env"
+        #env_file = f"{os.path.dirname(os.path.abspath(__file__))}/./.env"
         #env_file = "/Users/georgeanton/Desktop/Python_Projects/fastapi/app/.env"
 
 settings = Settings()
